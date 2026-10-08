@@ -1,6 +1,11 @@
 html {
     box-sizing: border-box;
 }
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 *,
 *::after,
 *::before {
@@ -657,10 +662,10 @@ input::placeholder {
     .gallery {
         grid-template-columns: repeat(1fr);
     }
-}
-.footer__social {
-    flex-direction: row;
-}
-.footer__social-link span {
-    display: none;
+    .footer__social {
+        flex-direction: row;
+    }
+    .footer__social-link span {
+        display: none;
+    }
 }
