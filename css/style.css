@@ -432,8 +432,7 @@ input::placeholder {
     flex-direction: column;
     gap: 15px;
 }
-.footer__social-item {
-}
+
 .footer__social-link {
     display: flex;
     gap: 10px;
