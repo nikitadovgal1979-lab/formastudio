@@ -17,45 +17,11 @@
         <meta property="og:url" content="https://formastudio-beta.vercel.app/" />
         <meta property="og:image" content="https://formastudio-beta.vercel.app/images/catalog-photo.jpg" />
         <title>FORMA STUDIO</title>
-
-        <!-- 1. Предзагрузка соединений (Preconnect) без дублей + CDN jsDelivr -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-
-        <!-- 2. Критические стили (убрана опечатка в пути к фону) -->
-        <style>
-            *,
-            *::after,
-            *::before {
-                box-sizing: border-box;
-            }
-            body {
-                font-size: 16px;
-                line-height: 1.5;
-                color: #2b2b2b;
-                font-family: "Roboto", sans-serif;
-                font-weight: 400;
-                overflow-x: hidden;
-            }
-            .header {
-                background-image: url("../images/header-bg.jpg");
-                background-image: image-set(
-                    "../images/header-bg.avif" type("image/avif"),
-                    "../images/header-bg.webp" type("image/webp"),
-                    "../images/header-bg.jpg" type("image/jpeg")
-                );
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                color: #f5f5f5;
-            }
-        </style>
-
-        <!-- 3. Асинхронная загрузка всех некритических стилей -->
         <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100..900&display=swap"
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             media="print"
             onload="this.media = 'all'"
         />
@@ -65,18 +31,17 @@
             media="print"
             onload="this.media = 'all'"
         />
-        <link rel="stylesheet" href="/css/reset.css" media="print" onload="this.media = 'all'" />
-        <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media = 'all'" />
-
-        <!-- 4. Фолбэк для клиентов с отключенным JavaScript -->
+        <link rel="stylesheet" href="css/reset.css" media="print" onload="this.media = 'all'" />
+        <link rel="stylesheet" href="css/style.css" media="print" onload="this.media = 'all'" />
         <noscript>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100..900&display=swap"
+                rel="stylesheet"
+            />
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-            <link rel="stylesheet" href="/css/reset.css" />
-            <link rel="stylesheet" href="/css/style.css" />
+            <link rel="stylesheet" href="css/reset.css" />
+            <link rel="stylesheet" href="css/style.css" />
         </noscript>
-
-        <!-- 5. Микроразметка Schema.org -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -313,7 +278,7 @@
                 </ol>
             </div>
             <div class="steps__img">
-                <img src="images/steps-img.jpg" alt="Modern country house with a swimming pool" />
+                <img src="images/steps-img.jpg" alt="Modern country house with a swimming pool" fetchpriority="high" />
             </div>
         </section>
         <section class="catalog section-box">
