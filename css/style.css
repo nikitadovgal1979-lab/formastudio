@@ -70,11 +70,6 @@ input::placeholder {
     background-size: cover;
     min-height: 100vh;
     color: #f5f5f5;
-    contain: layout;
-}
-.header,
-.hero {
-    min-height: 100vh; /* или точная фиксированная высота блока */
 }
 .header__top {
     padding: 64px 0;
