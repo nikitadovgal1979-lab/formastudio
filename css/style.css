@@ -18,7 +18,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     /* font-family: "Montserrat", sans-serif; */
-    overflow-x: hidden;
+    overflow-x: weighthidden;
 }
 a {
     color: inherit;
@@ -175,7 +175,6 @@ input::placeholder {
 .projects__slider {
     padding-bottom: 50px;
     overflow: visible;
-    min-height: 450px;
 }
 .projects__item {
     padding: 20px;
