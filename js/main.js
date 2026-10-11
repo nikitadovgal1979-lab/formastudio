@@ -9,8 +9,6 @@ const swiper = new Swiper(".projects__slider", {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 20,
-    observer: true,
-    observeParents: true,
     breakpoints: {
         640: {
             slidesPerView: 2,
