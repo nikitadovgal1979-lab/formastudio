@@ -70,6 +70,7 @@ input::placeholder {
     background-size: cover;
     height: 100vh;
     color: #f5f5f5;
+    min-height: 100vh;
 }
 .header__top {
     padding: 64px 0;
